@@ -164,11 +164,18 @@ function generateModel(obj)
 
 function generateText(obj)
 {
+	console.log('*/*/*/*/*/*/*/*/*/*/*/*/*/   generate text...');
+
 	var object 	= document.createElement('a-entity');
 	object.setAttribute("text-geometry"	, "value: "+obj.title+"; font: #optimerBoldFont; size:.1;");
 	object.setAttribute("position"		, "0 0 0");
 	object.setAttribute("rotation"		, "-90 0 0");
 	object.setAttribute("material"		, "color:white;");
+
+	var titulo	= document.createElement('a-entity');
+	titulo.setAttribute("text"	, 		"width: 4; align:center; letterSpacing: 5; color: white; value: "+obj.title);
+	titulo.setAttribute("position"		, "0 .2 -.35");
+	titulo.setAttribute("rotation"		, "-90 0 0");
 
 	var text	= document.createElement('a-entity');
 	text.setAttribute("text"	, 		"width: .8; align:center; letterSpacing: 5; color: white; value: "+obj.text);
@@ -182,16 +189,15 @@ function generateText(obj)
 	plane.setAttribute("height"		, "1");
 	plane.setAttribute("rotation"	,"-90 0 0");
 
-	plane.appendChild(text);
-
 
 	//plane.setAttribute("href"		, obj.url);
 	//plane.setAttribute("target"		, obj.target);
 
 	//var button = generateButton(obj,1.7);
 
-	//return [object,object1,plane].concat(button);
-	return plane;
+	//return [object,text,plane].concat(button);
+	return [titulo,text,plane];
+
 }
 
 function generateButton(obj,pos)
