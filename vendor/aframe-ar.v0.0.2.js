@@ -170,10 +170,10 @@ function generateText(obj)
 	object.setAttribute("rotation"		, "-90 0 0");
 	object.setAttribute("material"		, "color:white;");
 
-	var object1	= document.createElement('a-entity');
-	object1.setAttribute("text"	, 		"width: .8; align:center; letterSpacing: 5; color: white; value: "+obj.text);
-	object1.setAttribute("position"		, "0 0 0");
-	object1.setAttribute("rotation"		, "-90 0 0");
+	var text	= document.createElement('a-entity');
+	text.setAttribute("text"	, 		"width: .8; align:center; letterSpacing: 5; color: white; value: "+obj.text);
+	text.setAttribute("position"		, "0 .2 0");
+	text.setAttribute("rotation"		, "-90 0 0");
 
 	var plane	= document.createElement('a-plane');
 	plane.setAttribute("position"	, "0 0 0");
@@ -181,6 +181,10 @@ function generateText(obj)
 	plane.setAttribute("width"		, "1");
 	plane.setAttribute("height"		, "1");
 	plane.setAttribute("rotation"	,"-90 0 0");
+
+	plane.appendChild(text);
+
+
 	//plane.setAttribute("href"		, obj.url);
 	//plane.setAttribute("target"		, obj.target);
 
