@@ -1,15 +1,4 @@
 [{
-  "pattern": "texto",
-  "type": "pattern",
-  "patternUrl": "markers/text.patt",
-  "object": {
-    "type": "a-box",
-    "position": "0 0.5 0",
-    "material": "opacity: 0.5; side: double;color:green;",
-    "url": "https://www.walmart.com.mx/",
-    "target": "_blank"
-  }
-}, {
   "pattern": "walmart",
   "type": "pattern",
   "patternUrl": "markers/walmart.patt",
@@ -22,53 +11,5 @@
     "title": "Walmart",
     "text": "If not specified, fontImage will be the font‘s name, but with the extension replaced to .png. For example, if the font path ends with mozillavr.fnt, then the fontImage texture will default to mozillavr.png."
   }
-}, {
-  "pattern": "news",
-  "type": "pattern",
-  "patternUrl": "markers/news.patt",
-  "object": {
-    "type": "a-entity",
-    "obj": "models/knight.obj",
-    "mtl": "models/knight.mtl",
-    "scale": "0.1 0.1 0.1",
-    "url": "https://www.superama.com.mx/",
-    "target": "_blank",
-    "height": 100,
-    "width": 100,
-    "srcImg": "images/test1.jpg"
-  }
-}, {
-  "pattern": "events",
-  "type": "pattern",
-  "patternUrl": "markers/events.patt",
-  "object": {
-    "type": "a-plane",
-    "rotation": "-90 0 0",
-    "material": "",
-    "url": "https://www.sams.com.mx/",
-    "target": "_blank",
-    "height": 1,
-    "width": 1,
-    "srcImg": "images/test2.jpg"
-  }
-}, {
-  "pattern": "google",
-  "type": "pattern",
-  "patternUrl": "markers/google.patt",
-  "object": {
-    "type": "text",
-    "position": "",
-    "rotation": "-90 0 0",
-    "material": "color: white;",
-    "url": "https://www.google.com",
-    "target": "_blank",
-    "height": null,
-    "width": null,
-    "srcImg": "",
-    "title": "google",
-    "text": "asdasdsa </br>\nmmmmmmm \\n\nddddddddddd",
-    "obj": "",
-    "mtl": "",
-    "scale": ""
-  }
-}]
+}
+]
