@@ -166,7 +166,7 @@ function generateText(obj)
 {
 	var object 	= document.createElement('a-entity');
 	object.setAttribute("text-geometry"	, "value: "+obj.title+"; font: #optimerBoldFont; size:.1;");
-	object.setAttribute("position"		, "-.2 .3 -.3");
+	object.setAttribute("position"		, "0 0 0");
 	object.setAttribute("rotation"		, "-90 0 0");
 	object.setAttribute("material"		, "color:white;");
 
@@ -176,7 +176,7 @@ function generateText(obj)
 	object1.setAttribute("rotation"		, "-90 0 0");
 
 	var plane	= document.createElement('a-plane');
-	plane.setAttribute("position"	, "0 -.5 .1");
+	plane.setAttribute("position"	, "0 0 0");
 	plane.setAttribute("src"		, "#fondo");
 	plane.setAttribute("width"		, "1");
 	plane.setAttribute("height"		, "1");
