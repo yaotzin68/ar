@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<script src="vendor/jquery-3.2.1.min.js"></script>
+<!-- include aframe -->
+<script src="vendor/aframe.js"></script>
+<!-- include aframe-artoolkit -->
+<script src="vendor/aframe-ar.v0.0.2.js"></script>
+<script src="vendor/threex.plugins.js"></script>
+<script src="vendor/aframe-register.js"></script>
+<script src="vendor/vendor.js"></script>
+<!--script src="vendor/aframe-ar.js"></script-->
+<script src="https://unpkg.com/aframe-text-geometry-component@^0.5.0/dist/aframe-text-geometry-component.min.js"></script>
+<script src="vendor/aframe-href.js"></script>
+
+<body style='margin : 0px; overflow: hidden; font-family: Monospace;'><div style='position: fixed; top: 10px; width:inherit; text-align: center; z-index: 1;'>
+	<a href="https://github.com/jeromeetienne/AR.js/" target="_blank">AR.js</a> - mobile performance in a-frame
+	<br/>
+	Contact me any time at <a href='https://twitter.com/jerome_etienne' target='_blank'>@jerome_etienne</a>
+</div>
+<!-- enable artoolkit on this scene -->
+<a-scene id="scene" stats embedded arjs='sourceType: webcam; detectionMode: mono; maxDetectionRate: 30; canvasWidth: 240; canvasHeight: 180'>
+	<a-assets id="assets">
+		<img id="boton" src="images/boton.png">
+		<img id="fondo" src="images/fondo.png">
+		<a-asset-item id="optimerBoldFont"  src="https://rawgit.com/mrdoob/three.js/dev/examples/fonts/optimer_bold.typeface.json"></a-asset-item>
+		<a-asset-item id="walmartFont" 		src="fonts/Signika_Regular.json"></a-asset-item>
+	</a-assets>
+	<!-- define the object which gonna be put on this marker  -->
+	<!--a-box position='0 0.5 0' material='opacity: 0.5; side: double'>
+        <a-torus-knot radius='0.26' radius-tubular='0.05'>
+            <a-animation attribute="rotation" to="360 0 0" dur="3000" easing='linear' repeat="indefinite"></a-animation>
+        </a-torus-knot>
+    </a-box-->
+
+	<a-marker preset='hiro' markerhelpers=true>
+		<a-entity text="value: Hiro;" position="0 .2 0" rotation="0 0 0" scale="" visible=""></a-entity>
+		<a-plane position="0 0 0" rotation="-90 0 0" src="#fondo" material="" width="1" geometry="" height="1" rotation="" scale="" visible="" href="http://www.google.com" target="_blank"></a-plane>
+	</a-marker>
+
+
+
+	<!--a-entity text-geometry="value: What's up;" material="color:white;" position="0 .2 1" rotation="-90 0 0"></a-entity-->
+
+
+
+	<a-marker-camera>
+		<a-entity position="0 0 -3"
+				  geometry="primitive: ring; radiusOuter: 0.30;
+                          radiusInner: 0.20;"
+				  material="color: cyan; shader: flat"
+				  cursor="maxDistance: 60; fuse: true">
+			<a-animation begin="click" easing="ease-in" attribute="scale"
+						 fill="backwards" from="0.1 0.1 0.1" to="1 1 1" dur="150"></a-animation>
+			<a-animation begin="cursor-fusing" easing="ease-in" attribute="scale"
+						 fill="backwards" from="1 1 1" to="0.1 0.1 0.1" dur="1500"></a-animation>
+		</a-entity>
+	</a-marker-camera>
+</a-scene>
+</body>
+</html>

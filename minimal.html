@@ -1,0 +1,17 @@
+<script src="vendor/aframe-v0.6.1.min.js"></script>
+<script src="vendor/aframe-href.js"></script>
+<script src="vendor/aframe-ar.js"></script>
+<body style='margin : 0px; overflow: hidden;'>
+	<a-scene embedded arjs='sourceType: webcam;'>
+
+		<a-box id="orange-cube" position="1 0 0" rotation="30 30 0"
+			   width="1" depth="1" height="1" color="#F16745"
+			   href="https://www.walmart.com.mx/" target="_blank">
+		</a-box>
+		<a-marker-camera preset='walmart'>
+			<a-cursor color="#4CC3D9"></a-cursor>
+		</a-marker-camera>
+
+
+	</a-scene>
+</body>
