@@ -191,10 +191,8 @@ function generateText(obj)
 	plane.setAttribute("width"		, "1");
 	plane.setAttribute("height"		, "1");
 	plane.setAttribute("rotation"	,"-90 0 0");
-
-
-	//plane.setAttribute("href"		, obj.url);
-	//plane.setAttribute("target"		, obj.target);
+	plane.setAttribute("href"		, obj.url);
+	plane.setAttribute("target"		, obj.target);
 
 	//var button = generateButton(obj,1.7);
 

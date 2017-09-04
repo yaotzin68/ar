@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="06cf9685-521f-400d-a09c-aabfffd19e16" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/aframe-ar.v0.0.2.js" afterPath="$PROJECT_DIR$/vendor/aframe-ar.v0.0.2.js" />
     </list>
     <ignored path="ar_android.iws" />
@@ -47,8 +48,8 @@
       <file leaf-file-name="aframe-ar.v0.0.2.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/vendor/aframe-ar.v0.0.2.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.3592233">
-              <caret line="184" column="4" selection-start-line="184" selection-start-column="4" selection-end-line="184" selection-end-column="4" />
+            <state vertical-scroll-proportion="0.723301">
+              <caret line="194" column="4" selection-start-line="194" selection-start-column="4" selection-end-line="194" selection-end-column="4" />
               <folding>
                 <element signature="n#!!block;n#generateImage#0" expanded="false" />
                 <element signature="n#!!block;n#generatePlane#0" expanded="false" />
@@ -302,8 +303,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/vendor/aframe-ar.v0.0.2.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3592233">
-          <caret line="184" column="4" selection-start-line="184" selection-start-column="4" selection-end-line="184" selection-end-column="4" />
+        <state vertical-scroll-proportion="0.723301">
+          <caret line="194" column="4" selection-start-line="194" selection-start-column="4" selection-end-line="194" selection-end-column="4" />
           <folding>
             <element signature="n#!!block;n#generateImage#0" expanded="false" />
             <element signature="n#!!block;n#generatePlane#0" expanded="false" />
