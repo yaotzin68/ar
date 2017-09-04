@@ -164,7 +164,8 @@ function generateModel(obj)
 
 function generateText(obj)
 {
-	console.log('*/*/*/*/*/*/*/*/*/*/*/*/*/   generate text...');
+
+	console.log(' */*/*/*/*/*/*/*/*/*/*/*/*/   generate text...');
 
 	var object 	= document.createElement('a-entity');
 	object.setAttribute("text-geometry"	, "value: "+obj.title+"; font: #optimerBoldFont; size:.1;");
