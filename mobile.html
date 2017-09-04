@@ -23,6 +23,10 @@
 		<img id="fondo" src="images/fondo.png">
 		<a-asset-item id="optimerBoldFont"  src="https://rawgit.com/mrdoob/three.js/dev/examples/fonts/optimer_bold.typeface.json"></a-asset-item>
 		<a-asset-item id="walmartFont" 		src="fonts/Signika_Regular.json"></a-asset-item>
+
+
+		<video id="video" autoplay loop="true" src="video/soccer1.webm"></video>
+
 	</a-assets>
 	<!-- define the object which gonna be put on this marker  -->
 	<!--a-box position='0 0.5 0' material='opacity: 0.5; side: double'>
@@ -32,8 +36,9 @@
     </a-box-->
 
 	<a-marker preset='hiro' markerhelpers=true>
-		<a-entity text="value: Hiro;" position="0 .2 0" rotation="0 0 0" scale="" visible=""></a-entity>
-		<a-plane position="0 0 0" rotation="-90 0 0" src="#fondo" material="color:white;" width="1" geometry="" height="1" rotation="" scale="" visible="" href="http://www.google.com" target="_blank"></a-plane>
+		<!--a-entity text="value: Hiro;" position="0 .2 0" rotation="0 0 0" scale="" visible=""></a-entity>
+		<a-plane position="0 0 0" rotation="-90 0 0" src="#fondo" material="color:white;" width="1" geometry="" height="1" rotation="" scale="" visible="" href="http://www.google.com" target="_blank"></a-plane-->
+		<a-video src="#video" width="2" height="1" position="0 0 0" rotation="-90 0 0" material="transparent: true;" ></a-video>
 	</a-marker>
 
 
