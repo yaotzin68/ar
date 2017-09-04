@@ -176,12 +176,12 @@ function generateText(obj)
 
 	var titulo	= document.createElement('a-entity');
 	titulo.setAttribute("text"	, 		"width: 4; align:center; letterSpacing: 5; color: white; value: "+obj.title);
-	titulo.setAttribute("position"		, "0 .2 -.5");
+	titulo.setAttribute("position"		, "0 .2 -.6");
 	titulo.setAttribute("rotation"		, "-90 0 0");
 
 	var text	= document.createElement('a-entity');
 	text.setAttribute("text"	, 		"width: .8; align:center; letterSpacing: 5; color: white; value: "+obj.text);
-	text.setAttribute("position"		, "0 .2 -.3");
+	text.setAttribute("position"		, "0 .2 -.4");
 
 	text.setAttribute("rotation"		, "-90 0 0");
 
