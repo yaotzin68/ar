@@ -7,7 +7,7 @@ if (typeof AFRAME === 'undefined') {
 /**
  * Hyper Link component for A-Frame.
  */
-AFRAME.registerComponent('video-play', {
+AFRAME.registerComponent('videoplay', {
     schema: {
         default: ''
     },
