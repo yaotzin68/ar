@@ -167,20 +167,21 @@ function generateText(obj)
 
 	console.log(' */*/*/*/*/*/*/*/*/*/*/*/*/   generate text...');
 
+	/*
 	var object 	= document.createElement('a-entity');
 	object.setAttribute("text-geometry"	, "value: "+obj.title+"; font: #optimerBoldFont; size:.1;");
 	object.setAttribute("position"		, "0 0 0");
 	object.setAttribute("rotation"		, "-90 0 0");
-	object.setAttribute("material"		, "color:white;");
+	object.setAttribute("material"		, "color:white;");*/
 
 	var titulo	= document.createElement('a-entity');
 	titulo.setAttribute("text"	, 		"width: 4; align:center; letterSpacing: 5; color: white; value: "+obj.title);
-	titulo.setAttribute("position"		, "0 .2 -.35");
+	titulo.setAttribute("position"		, "0 .2 -.5");
 	titulo.setAttribute("rotation"		, "-90 0 0");
 
 	var text	= document.createElement('a-entity');
 	text.setAttribute("text"	, 		"width: .8; align:center; letterSpacing: 5; color: white; value: "+obj.text);
-	text.setAttribute("position"		, "0 .2 0");
+	text.setAttribute("position"		, "0 .2 -.3");
 	text.setAttribute("rotation"		, "-90 0 0");
 
 	var plane	= document.createElement('a-plane');
