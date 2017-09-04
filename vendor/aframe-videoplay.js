@@ -15,6 +15,7 @@ AFRAME.registerComponent('video-play', {
     boundClickHandler: undefined,
 
     clickHandler: function hrefClickHandler() {
+        console.log('play');
         var video = document.getElementById('video');
         video.play();
     },
