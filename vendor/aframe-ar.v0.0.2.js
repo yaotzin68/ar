@@ -182,6 +182,7 @@ function generateText(obj)
 	var text	= document.createElement('a-entity');
 	text.setAttribute("text"	, 		"width: .8; align:center; letterSpacing: 5; color: white; value: "+obj.text);
 	text.setAttribute("position"		, "0 .2 -.3");
+
 	text.setAttribute("rotation"		, "-90 0 0");
 
 	var plane	= document.createElement('a-plane');
