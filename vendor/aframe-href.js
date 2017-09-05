@@ -17,6 +17,10 @@ AFRAME.registerComponent('href', {
     clickHandler: function hrefClickHandler() {
         var url = this.data;
         var target = this.el.getAttribute('target');
+
+        var video = document.getElementById('video');
+        video.play();
+
         console.log('link to ' + url);
         if (url && url[0] === '#') { // in-page anchor
             var ele = document.querySelector(url);

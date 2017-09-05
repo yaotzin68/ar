@@ -19,13 +19,16 @@
 </div>
 
 <!-- enable artoolkit on this scene -->
+<!--  -->
 <a-scene id="scene" stats embedded arjs='sourceType: webcam; detectionMode: mono; maxDetectionRate: 30; canvasWidth: 240; canvasHeight: 180'>
 	<a-assets id="assets">
 		<img id="boton" src="images/boton.png">
 		<img id="fondo" src="images/fondo.png">
+		<img id="ofertaR2" src="images/ofertaR2D2.jpg">
+		<img id="ofertaCocina" src="images/ofertaCocina.jpg">
 		<a-asset-item id="optimerBoldFont"  src="https://rawgit.com/mrdoob/three.js/dev/examples/fonts/optimer_bold.typeface.json"></a-asset-item>
 		<a-asset-item id="walmartFont" 		src="fonts/Signika_Regular.json"></a-asset-item>
-		<video id="video" playsinline autoplay muted loop="true" src="video/soccer1.webm"></video>
+		<video id="video" playsinline autoplay muted loop="true" src="video/r2d2.webm"></video>
 
 	</a-assets>
 	<!-- define the object which gonna be put on this marker  -->
@@ -36,9 +39,9 @@
     </a-box-->
 
 	<a-marker preset='hiro' markerhelpers=true>
-		<!--a-entity text="value: Hiro;" position="0 .2 0" rotation="0 0 0" scale="" visible=""></a-entity>
-		<a-plane position="0 0 0" rotation="-90 0 0" src="#fondo" material="color:white;" width="1" geometry="" height="1" rotation="" scale="" visible="" href="http://www.google.com" target="_blank"></a-plane-->
-		<a-video id="video" src="#video" width="2" height="1" position="0 0 0" rotation="-90 0 0" videoplay="true"  ></a-video>
+		<!--a-entity text="value: Hiro;" position="0 .2 0" rotation="0 0 0" scale="" visible=""></a-entity-->
+		<a-plane position="0 0 0" rotation="-90 0 0" src="#ofertaR2" width="1" geometry="" height="1" rotation="" scale="" visible="" href="https://www.walmart.com.mx/juguetes/Figuras-de-Accion-y-Coleccionables/Juguetes-de-Coleccion/Radio-Control-R2-D2-Inteligente-Star-Wars_00063050949456" target="_blank"></a-plane>
+		<a-video id="video" src="#video" width="2" height="1" position="0 .5 0" rotation="-90 0 0" ></a-video>
 	</a-marker>
 
 
