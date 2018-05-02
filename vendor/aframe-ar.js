@@ -958,18 +958,18 @@ function generateButton(obj,pos)
 
 function getJSON()
 {
-	//console.log('getJSON...');
+	console.log('getJSON...');
 
 	return new Promise((resolve, reject) =>{
 		$.getJSON( "json/test.json", function( data )
 		{
-			//console.log(data);
+			console.log(data);
 			for(var pat in data)
 			{
 				if(data[pat].object)
 				{
 					var object 	= generateObject(data[pat].object);
-					//console.log('object',object,object[1]);
+					console.log('object',object,object[1]);
 
 					var aMarker = document.createElement("a-marker");
 					aMarker.setAttribute("preset", data[pat].pattern);
@@ -988,7 +988,7 @@ function getJSON()
 					}
 
 					var scene = document.getElementById("scene");
-					//console.log('scene',scene);
+					console.log('scene',scene);
 
 					if(scene!=null)
 					{
