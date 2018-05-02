@@ -1,15 +1,32 @@
-[{
-  "pattern": "walmart",
-  "type": "pattern",
-  "patternUrl": "markers/walmart.patt",
-  "object": {
-    "type": "text",
-    "rotation": "-90 0 0",
-    "material": "color: white;",
-    "url": "https://www.sams.com.mx/",
-    "target": "_blank",
-    "title": "Walmart",
-    "text": "If not specified, fontImage will be the font‘s name, but with the extension replaced to .png. For example, if the font path ends with mozillavr.fnt, then the fontImage texture will default to mozillavr.png."
+[
+  {
+    "pattern": "walmart",
+    "type": "pattern",
+    "patternUrl": "markers/walmart.patt",
+    "object":
+    {
+      "type": "text",
+      "rotation": "-90 0 0",
+      "material": "color: white;",
+      "url": "https://www.sams.com.mx/",
+      "target": "_blank",
+      "title": "Walmart",
+      "text": "If not specified, fontImage will be the font‘s name, but with the extension replaced to .png. For example, if the font path ends with mozillavr.fnt, then the fontImage texture will default to mozillavr.png."
+    }
+  },
+  {
+    "pattern": "onboarding",
+    "type": "pattern",
+    "patternUrl": "markers/onboarding.patt",
+    "object":
+    {
+      "type": "text",
+      "rotation": "-90 0 0",
+      "material": "color: white;",
+      "url": "https://www.sams.com.mx/",
+      "target": "_blank",
+      "title": "Walmart",
+      "text": "If not specified, fontImage will be the font‘s name, but with the extension replaced to .png. For example, if the font path ends with mozillavr.fnt, then the fontImage texture will default to mozillavr.png."
+    }
   }
-}
 ]
